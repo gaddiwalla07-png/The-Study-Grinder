@@ -16,7 +16,7 @@ export interface FileItem {
   name: string;
   modified: string;
   type: 'pdf' | 'image' | 'video' | 'folder';
-  resources?: number;
+  size?: string;
   url?: string;
 }
 
@@ -70,3 +70,13 @@ export const DEFAULT_CONFIG: AppConfig = {
   textScale: 1,
   advancedMode: false,
 };
+
+export const INITIAL_TASKS: Task[] = [
+  { id: '1', title: 'Plan your growth', time: '09:00 AM', location: 'Sanctuary', type: 'session', completed: false },
+  { id: '2', title: 'Review your roots', priority: 'HIGH', type: 'task', completed: true },
+];
+
+export const INITIAL_FILES: FileItem[] = [
+  { id: '1', name: 'Study_Guide_Eco.pdf', modified: '2 hours ago', type: 'pdf', size: '1.2 MB' },
+  { id: '2', name: 'Landscape_Reference.jpg', modified: 'Yesterday', type: 'image', url: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=800', size: '2.4 MB' },
+];
