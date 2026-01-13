@@ -1,0 +1,8 @@
+{
+  "name": "Nature Sanctuary",
+  "description": "A serene, nature-inspired productivity and focus application designed to nurture your growth through mindful planning and insights.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
